@@ -1,5 +1,5 @@
 """
-A simple Hello World application following PEP 8 standards.
+A Hello World and Rock-Paper-Scissors applicaction, very simple and basic.
 """
 import random
 
@@ -12,10 +12,10 @@ def main():
 
 def play_janken():
     """
-    Function to play Rock-Paper-Scissors with the user (janken from JP)
+    Function to play Rock-Paper-Scissors with the user (janken from the Japanese name)
     """
     hands = ["rock", "paper", "scissors"]
-    cpu_hand = random.choice(hands)
+    cpu_hand = random.choice(hands) # Chooses a random string from the list 'hands'.
 
     user_hand = input("Enter your choice (rock, paper or scissors): ").strip().lower()
     if user_hand not in hands:
