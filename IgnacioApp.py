@@ -5,10 +5,13 @@ import random
 
 def main():
     """
-    Main function to print 'Hello, World!'.
+    Main function that prints Hello World, makes the user play Rock-Paper-Scissors
+    with the cpu and recommends a song.
     """
     print("Hello, World!")
     play_janken()
+    recommend_a_song()
+
 
 def play_janken():
     """
@@ -39,5 +42,14 @@ def winner(user_hand: str, cpu_hand: str) -> str:
     else:
         print("You lose this round!")
 
-if __name__ == "__main__":
+def recommend_a_song():
+    """
+    Function that prints a random song from the songs in songs.txt .
+    """
+    songs = open("songs.txt").read().split('\n')
+    song = random.choice(songs)
+    print(f"You may have won, lost or tied, anyways, go listen to this song: {song}")
+
+
+if __name__ == "__main__": # Para que al llamar al programa se ejecute
     main()
