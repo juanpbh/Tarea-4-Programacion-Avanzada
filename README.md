@@ -5,4 +5,3 @@ Para ejecutar el archivo receta_escalable.py se debe cambiar el directorio de la
 
 Para ejecutar el archivo hello_world1.py se debe cambiar el directorio de la consola (cmd) por la carpeta que almacena el archivo y luego escribir dentro de la consola 'python hello_world1.py'. El programa preguna ¿Piedra papel o tijera?, por lo que se debe escribir la opción que se desee.
 
-
